@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Стригун — Barbershop</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-content">
+        <div class="logo">Стригун</div>
+        <nav id="desktop-nav">
+          <ul>
+            <li><a href="#about">О нас</a></li>
+            <li><a href="#team">Мастера</a></li>
+            <li><a href="#price">Прайс</a></li>
+            <li><a href="#works">Наши работы</a></li>
+            <li><a href="#contacts">Контакты</a></li>
+          </ul>
+        </nav>
+        <button class="btn-online" id="book-btn-desktop">
+          Записаться онлайн
+        </button>
+        <div class="burger" id="burger">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+      <nav id="mobile-nav">
+        <ul>
+          <li><a href="#about">О нас</a></li>
+          <li><a href="#team">Мастера</a></li>
+          <li><a href="#price">Прайс</a></li>
+          <li><a href="#works">Наши работы</a></li>
+          <li><a href="#contacts">Контакты</a></li>
+          <li>
+            <button class="btn-online" id="book-btn-mobile">
+              Записаться онлайн
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="hero-content animate">
+        <h1>Стригун</h1>
+        <p>Добро пожаловать на мужскую территорию</p>
+        <button class="btn-online" id="book-btn-hero">Записаться онлайн</button>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title animate">О НАС</h2>
+        <div class="about-content animate">
+          <div class="about-text">
+            <p>
+              Стригун — это команда опытных и талантливых мастеров, которые
+              знают своё дело и помогут вам выбрать идеальную стрижку.
+            </p>
+            <p>
+              Мы сделаем все возможное, чтобы каждый наш клиент чувствовал себя
+              уверенно и привлекательно. В нашем заведении мы используем только
+              лучшее оборудование и качественные продукты для заботы о вашей
+              внешности.
+            </p>
+            <p>
+              Ждём вас в нашем барбершопе, чтобы создать неповторимый образ и
+              подарить вам чувство уверенности и стиля!
+            </p>
+          </div>
+          <div class="about-image">
+            <img src="images/inter.jpg" alt="Интерьер барбершопа" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="team" class="section">
+      <div class="container">
+        <h2 class="section-title animate">НАША КОМАНДА</h2>
+        <div class="team">
+          <div class="team-member animate">
+            <img src="images/serg.jpg" alt="Сергей Трифонов" />
+            <h3>TOP - BARBER</h3>
+            <p>Сергей Трифонов</p>
+            <p>Опыт 7 лет</p>
+          </div>
+          <div class="team-member animate">
+            <img src="images/matvey.jpg" alt="Матвей Ефимов" />
+            <h3>BARBER</h3>
+            <p>Матвей Ефимов</p>
+            <p>Опыт 3 года</p>
+          </div>
+          <div class="team-member animate">
+            <img src="images/evgen.jpg" alt="Евгений Тарасов" />
+            <h3>BARBER</h3>
+            <p>Евгений Тарасов</p>
+            <p>Опыт 5 лет</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="price" class="section">
+      <div class="container">
+        <h2 class="section-title animate">ПРАЙС</h2>
+        <div class="price-tabs animate">
+          <div class="price-tab active" data-tab="haircut">СТРИЖКА</div>
+          <div class="price-tab" data-tab="beard">БОРОДА</div>
+          <div class="price-tab" data-tab="additional">ДОПОЛНИТЕЛЬНЫЕ</div>
+          <div class="price-tab" data-tab="complexes">КОМПЛЕКСЫ</div>
+        </div>
+        <div class="price-content active" id="haircut-content">
+          <div class="price-table animate">
+            <div class="price-category">
+              <h3>Стрижка</h3>
+              <ul class="price-list">
+                <li class="price-item">
+                  <span class="service">Мужская стрижка</span
+                  ><span class="price">1 200 ₽</span>
+                </li>
+                <li class="price-item">
+                  <span class="service">Студенческая стрижка</span
+                  ><span class="price">990 ₽</span>
+                </li>
+                <li class="price-item">
+                  <span class="service">Стрижка машинкой</span
+                  ><span class="price">600 ₽</span>
+                </li>
+                <li class="price-item">
+                  <span class="service">Детская стрижка</span
+                  ><span class="price">990 ₽</span>
+                </li>
+                <li class="price-item">
+                  <span class="service">Бритье головы</span
+                  ><span class="price">1 200 ₽</span>
+                </li>
+                <li class="price-item">
+                  <span class="service">Стрижка на ножницах</span
+                  ><span class="price">1 600 ₽</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="price-content" id="beard-content">
+          <div class="price-table">
+            <div class="price-category">
+              <h3>Борода</h3>
+              <ul class="price-list">
+                <li class="price-item">
+                  <span class="service">Стрижка бороды</span
+                  ><span class="price">500 ₽</span>
+                </li>
+                <li class="price-item">
+                  <span class="service">Формирование бороды</span
+                  ><span class="price">800 ₽</span>
+                </li>
+                <li class="price-item">
+                  <span class="service">Бритье бороды</span
+                  ><span class="price">600 ₽</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="price-content" id="additional-content">
+          <div class="price-table">
+            <div class="price-category">
+              <h3>Дополнительные услуги</h3>
+              <ul class="price-list">
+                <li class="price-item">
+                  <span class="service">Массаж головы</span
+                  ><span class="price">300 ₽</span>
+                </li>
+                <li class="price-item">
+                  <span class="service">Уход за кожей головы</span
+                  ><span class="price">500 ₽</span>
+                </li>
+                <li class="price-item">
+                  <span class="service">Цвет волос</span
+                  ><span class="price">1 500 ₽</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="price-content" id="complexes-content">
+          <div class="price-table">
+            <div class="price-category">
+              <h3>Комплексы</h3>
+              <ul class="price-list">
+                <li class="price-item">
+                  <span class="service">Стрижка + борода</span
+                  ><span class="price">1 800 ₽</span>
+                </li>
+                <li class="price-item">
+                  <span class="service">Стрижка + уход</span
+                  ><span class="price">2 000 ₽</span>
+                </li>
+                <li class="price-item">
+                  <span class="service">Полный уход</span
+                  ><span class="price">2 500 ₽</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="works" class="section">
+      <div class="container">
+        <h2 class="section-title animate">НАШИ РАБОТЫ</h2>
+        <div class="works-slider-container">
+          <div class="works-slider animate" id="works-slider">
+            <div class="work-slide">
+              <img src="images/1.jpg" alt="Работа 1" />
+              <div class="work-caption">
+                Стрижка машинкой + Стрижка ножницами
+              </div>
+            </div>
+            <div class="work-slide">
+              <img src="images/2.jpg" alt="Работа 2" />
+              <div class="work-caption">Стрижка + Моделирование бороды</div>
+            </div>
+
+            <div class="work-slide">
+              <img src="images/4.jpg" alt="Работа 4" />
+              <div class="work-caption">
+                Стрижка машинкой + Моделирование бороды
+              </div>
+            </div>
+            <div class="work-slide">
+              <img src="images/5.jpg" alt="Работа 5" />
+              <div class="work-caption">
+                Стрижка машинкой + Моделирование бороды
+              </div>
+            </div>
+            <div class="work-slide">
+              <img src="images/3.jpg" alt="Работа 3" />
+              <div class="work-caption">Стрижка ножницами</div>
+            </div>
+          </div>
+          <div class="slider-nav animate">
+            <button class="slider-btn" id="prev-slide">&#10094;</button>
+            <button class="slider-btn" id="next-slide">&#10095;</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacts" class="section">
+      <div class="container">
+        <h2 class="section-title animate">КОНТАКТЫ</h2>
+        <div class="contacts">
+          <div class="contacts-info animate">
+            <p>+7 917 531-81-06</p>
+            <p>strigun.barber@mail.ru</p>
+            <button class="btn-online" id="book-btn-footer">
+              Записаться онлайн
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer
+      style="
+        padding: 1rem 0;
+        text-align: center;
+        font-size: 0.8rem;
+        color: rgba(255, 255, 255, 0.5);
+      "
+    >
+      © 2025 «Стригун»
+      <br />
+      <a
+        href="https://ilnazfront.site"
+        style="color: rgba(255, 255, 255, 0.5); text-decoration: underline"
+        >ilnazfront.site</a
+      >
+    </footer>
+
+    <div class="modal" id="booking-modal">
+      <div class="modal-content">
+        <button class="close-modal">&times;</button>
+        <h2>Записаться онлайн</h2>
+        <form id="booking-form">
+          <div class="form-group">
+            <label for="name">Имя</label>
+            <input type="text" id="name" required placeholder="Ваше имя" />
+          </div>
+          <div class="form-group">
+            <label for="phone">Телефон</label>
+            <input
+              type="tel"
+              id="phone"
+              required
+              placeholder="+7 (XXX) XXX-XX-XX"
+            />
+          </div>
+          <div class="form-group">
+            <label for="service">Услуга</label>
+            <select id="service" required>
+              <option value="">Выберите услугу</option>
+              <option value="haircut">Стрижка</option>
+              <option value="beard">Стрижка бороды</option>
+              <option value="complex">Комплекс</option>
+              <option value="other">Другое</option>
+            </select>
+          </div>
+          <button type="submit" class="btn-submit">Отправить заявку</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="success-notification" id="success-notification">
+      Спасибо за заявку! Ждите ответа — вам скоро позвонят.
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
